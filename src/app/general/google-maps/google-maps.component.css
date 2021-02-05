@@ -1,0 +1,11 @@
+agm-map {
+  height: 300px;
+}
+
+.hr {
+  width: 70px !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  border: 0 !important;
+  border-top: 5px solid #2c1a4d !important;
+}

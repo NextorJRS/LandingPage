@@ -1,0 +1,47 @@
+.parallax {
+  background-image: url('../../../assets/img/DIGITAL.png');
+  height: 110%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.example-header-image {
+  background-image: url('../../../assets/img/carTitle.jpg');
+  /* <a href='https://www.freepik.es/vectores/musica'>Vector de Música creado por pch.vector - www.freepik.es</a> */
+  background-size: cover;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline, ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline  { color: #2c1a4d !important; }
+input.mat-input-element { color: #2c1a4d !important; }
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+.main { top: 65px; border-radius: 16px; }
+
+.hr {
+  width: 70px !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  border: 0 !important;
+  border-top: 5px solid #2c1a4d !important;
+}
+
+
+@media (min-width: 575.98px) {
+  .main { top: 60px; }
+}
+
+@media (min-width: 767.98px) {
+  .main { top: -30px; }
+}
+
+@media (min-width: 991.98px) {
+  .main { top: -60px; }
+}
+
+@media (min-width: 1199.98px) {
+  .main { top: -65px; }
+}

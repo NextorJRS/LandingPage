@@ -1,0 +1,129 @@
+<div id="register" class="parallax">
+  <div class="container">
+    <div class="row animate__animated animate__bounce">
+      <div class="col-md-12 col-lg-6 col-sm-12 m-md-4 m-sm-3 mt-sm-5 align-self-center mb-3">
+        <h1 class="text-purple-l">MY TITLE</h1>
+        <p class="text-purple-l">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore perspiciatis, nostrum laborum voluptatem asperiores fugit eius esse, iusto omnis magnam dolor laudantium nobis vitae quod quo amet. Aut, qui odio.Odit quia tempore, itaque explicabo harum ipsum facilis iusto non optio nisi aliquid totam corporis cumque nulla sequi odio, ab voluptates ut mollitia eligendi. Doloremque consequatur quibusdam perspiciatis veniam commodi?</p>
+      </div>
+      <div class="col m-lg-5 m-md-4 m-sm-3 align-self-center">
+        <mat-card class="bg-purple-l text-purple mat-elevation-z3">
+          <mat-card-header class="border border-purple">
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>The best experience</mat-card-title>
+            <mat-card-subtitle class="text-purple">Your music</mat-card-subtitle>
+          </mat-card-header>
+          <div class="conatiner-fluid text-purple mt-3 pt-3" >
+            <h1 class="font-weight-light w-100 text-center">Register</h1>
+            <div class="form-group">
+              <mat-form-field appearance="outline" class="w-100 border-purple">
+                <mat-label class="text-purple border-purple">Enter your email</mat-label>
+                <input class="text-purple border-purple" matInput placeholder="pat@example.com" [formControl]="email" required>
+                <mat-icon matSuffix>mail</mat-icon>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+              <mat-form-field appearance="outline" class="w-100 border-purple">
+                <mat-label class="text-purple">User name</mat-label>
+                <input matInput [formControl]="userName" required>
+                <mat-icon matSuffix>tag_faces</mat-icon>
+                <mat-error *ngIf="userName.invalid">{{getErrorMessageUser()}}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="container text-center mt-5">
+              <button mat-stroked-button color="warn">
+                <mat-icon aria-hidden="false" aria-label="listen">mail</mat-icon>
+                Gmail
+              </button>
+              <button mat-stroked-button color="primary">
+                <mat-icon aria-hidden="false" aria-label="listen">facebook</mat-icon>
+                Facebook
+              </button>
+            </div>
+          </div>
+          <mat-card-actions>
+            <div class="row justify-content-between mt-5">
+              <div class="col">
+                <button mat-button color="primary" [disabled]="email.invalid || userName.invalid" (click)="save()">
+                  <mat-icon aria-hidden="false" aria-label="send">send</mat-icon>
+                </button>
+              </div>
+              <div class="col text-right">
+                <button mat-button color="primary" (click)="openBottomSheet()">
+                  <mat-icon aria-hidden="false" aria-label="shared">shared</mat-icon>
+                </button>
+              </div>
+            </div>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="news" class="container pt-4 p-3 bg-light rounded-lg mat-elevation-z4 position-relative main">
+  <div class="container-fluid mt-3">
+    <hr class="hr">
+    <p class="font-weight-lighter h1 text-center text-purple">News Relases</p>
+    <p class="font-weight-lighter h5 text-center text-secondary">
+      <mat-icon aria-hidden="false" class="text-purple">music_note</mat-icon>
+      The New
+    </p>
+    <div class="row">
+      <div class="col-12 pt-3">
+        <app-new-relases></app-new-relases>
+      </div>
+    </div>
+  </div>
+  <div id="about" class="container-fluid mt-3 pt-4">
+    <hr class="hr">
+    <p class="font-weight-lighter h1 text-center text-purple">About Us</p>
+    <p class="font-weight-lighter h5 text-center text-secondary">
+      <mat-icon aria-hidden="false" class="text-purple">music_note</mat-icon>
+      Get to know us
+    </p>
+    <div class="row pt-3">
+      <div class="col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-3 pt-3">
+            <mat-icon aria-hidden="false" class="h1 text-primary">queue_music</mat-icon>
+          </div>
+          <div class="col-8 pt-3">
+            <h2 class="font-weight-lighter">
+              Global Company
+            </h2>
+            <hr>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, vitae numquam delectus sequi voluptatibus temporibus neque magni! Tempora dicta odio animi voluptatem aliquam eos explicabo ex? Odio neque corporis voluptatibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="col-3 pt-3">
+            <mat-icon aria-hidden="false" class="h1 text-warning">emoji_events</mat-icon>
+          </div>
+          <div class="col-8 pt-3">
+            <h2 class="font-weight-lighter">
+              Mision Company
+            </h2>
+            <hr>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, vitae numquam delectus sequi voluptatibus temporibus neque magni! Tempora dicta odio animi voluptatem aliquam eos explicabo ex? Odio neque corporis voluptatibus.
+            </p>
+          </div>
+          <div class="col-3 pt-3">
+            <mat-icon aria-hidden="false" class="h1 text-success">hiking</mat-icon>
+          </div>
+          <div class="col-8 pt-3">
+            <h2 class="font-weight-lighter">
+              Vision Company
+            </h2>
+            <hr>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, vitae numquam delectus sequi voluptatibus temporibus neque magni! Tempora dicta odio animi voluptatem aliquam eos explicabo ex? Odio neque corporis voluptatibus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div appDirectives class="col-md-6 col-sm-12">
+        <img src="https://wingman.mediumra.re/assets/img/graphic-developer-group.svg" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+</div>

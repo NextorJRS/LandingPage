@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-purple mat-elevation-z6 fixed-top ">
+  <a class="navbar-brand text-purple-l" href="." mat-button>
+    <mat-icon aria-hidden="false" aria-label="listen">library_music</mat-icon>
+    My app
+  </a>
+  <button mat-button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a (click)="scrollToElement('register')" class="nav-link text-purple-l" mat-button>Register<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToElement('news')" class="nav-link text-purple-l" mat-button>News Relases</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToElement('about')" class="nav-link text-purple-l" mat-button>About Us</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToElement('contact')" class="nav-link text-purple-l" mat-button>Conatact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <mat-form-field class="w-100">
+        <mat-label>Search</mat-label>
+        <input matInput type="text" class="text-purple-l" name="search" [(ngModel)]="value">
+        <button *ngIf="value" mat-button matSuffix mat-icon-button aria-label="Clear" (click)="value=''" class="text-purple-l nav-link">
+          <mat-icon>close</mat-icon>
+        </button>
+        <mat-icon matSuffix class="text-purple-l">saved_search</mat-icon>
+      </mat-form-field>
+    </form>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-purple">
+  <a class="navbar-brand text-purple-l" href="." mat-button>
+    <mat-icon aria-hidden="false" aria-label="listen">library_music</mat-icon>
+    My app
+  </a>
+  <button mat-button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link text-purple-l" mat-button>Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-purple-l" mat-button>Link</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <mat-form-field class="w-100">
+        <mat-label>Search</mat-label>
+        <input matInput type="text" class="text-purple-l" name="search" [(ngModel)]="value">
+        <button *ngIf="value" mat-button matSuffix mat-icon-button aria-label="Clear" (click)="value=''" class="text-purple-l nav-link">
+          <mat-icon>close</mat-icon>
+        </button>
+        <mat-icon matSuffix class="text-purple-l">saved_search</mat-icon>
+      </mat-form-field>
+    </form>
+  </div>
+</nav>
